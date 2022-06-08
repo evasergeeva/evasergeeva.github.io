@@ -1,0 +1,89 @@
+.hidden{
+  visibility: hidden
+}
+.h-16{
+  font-size: 16px;
+}
+.h-379{
+  height: 400px;
+}
+.h-450{
+  height: 500px;
+  cursor: grab
+}
+
+.circle-150{
+  height: 150px;
+  width: 150px;
+}
+.circle-70{
+  height: 70px;
+  width: 70px;
+}
+.circle-60{
+  height: 60px !important;
+  width: 60px !important;
+}
+#block1{
+  height: 500px;
+  background: url('../img/bg1.png');
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.group{
+  transition: 0.3s;
+}
+.group:hover{
+  background: #1D1C43 !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.nav-item{
+  transition: 0.3s;
+}
+.nav-item:hover{
+  background: #FEB248 !important;
+  color: white !important;
+  border-radius: .325rem !important;
+}
+
+.text-overflow-hidden{
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 426px) {
+  .h-450{
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 427px) and (max-width: 767px) {
+  .h-450{
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1439px){
+  .h-450{
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .h-450{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .w-100-adapttive{
+    width: 100%;
+  }
+  #block1{
+    height: 500px !important;
+    background: url('../img/bg1M.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+}
