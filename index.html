@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#VALIM Бизнес - Лучший онлайн сервис для помощи бизнесу</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade shadow-lg" id="feedback" tabindex="-1" aria-labelledby="feedbackLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-image: url('./img/pattern2.png'); background-repeat: repeat;">
+          <div class="modal-header border-0 pt-4">
+            <h1 class="modal-title fs-5 ps-3 fw-bold text-white" id="feedbackLabel">Обратная связь</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="px-3">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Введите ваше имя.." style="background-color: rgba(255,255,255,0.85)">
+                <label for="floatingInput">Ваше имя</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingPassword" placeholder="Введите ваш телефон.." style="background-color: rgba(255,255,255,0.85)">
+                <label for="floatingPassword">Ваш телефон</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Комментарий (необязательно)" id="floatingTextarea2" style="height: 100px; background-color: rgba(255,255,255,0.85)"></textarea>
+                <label for="floatingTextarea2">Комментарий</label>
+              </div>
+              <p class="m-0 text-white small text-center">Ваши данные под защитой и не будут переданы третьим лицам</p>
+            </div>
+          </div>
+          <div class="modal-footer border-0 justify-content-center pt-0 pb-4">
+            <button type="button" class="btn btn-secondary px-5" data-bs-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary px-5 small">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid fixed-top p-0 menu" style="transition:.3s;">
+      <div class="container col-9 col-lg-12 p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/Group.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 my-4 my-lg-0 py-3 py-lg-0 ps-0 ps-lg-4">
+              <li class="nav-item">
+                <a class="nav-link px-0 px-lg-4 link-light" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0 px-lg-4 link-light" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0 px-lg-4 link-light" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row">
+              <div class="">
+                <a href="#" class="btn btn-primary py-2 px-4 small" data-bs-toggle="modal" data-bs-target="#feedback">
+                  <p class="m-0 px-3 small">Задать вопрос</p>
+                </a>
+              </div>
+              <div class="d-flex flex-column ps-0 ps-lg-4 mt-3 mt-lg-0 text-white">
+                <p class="m-0 small">8 (800) 888 88 88</p>
+                <p class="m-0 small">info@mail.com</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+      </div>
+    </div>
+    <section class="utp" style="background-image: url('./img/Frame 1.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+      <div class="container col-10 col-lg-12 h-100">
+        <div class="row py-5 h-100">
+          <div class="col-12 col-lg-6 pt-5 mt-5">
+            <div class="d-flex flex-column justify-content-end justify-content-lg-center pb-5 pb-lg-0 text-center text-lg-start h-100 text-white pt-0 pt-lg-5 mt-0 mt-lg-0">
+              <p class="display-5 fw-bold mb-4">Лучшее решение для вашего бизнеса</p>
+              <p class="m-0 h5 fw-normal">Имеется спорная точка зрения, гласящая примерно следующее: стремящиеся вытеснить традиционное производство, нанотехнологии своевременно верифицированы. В целом, конечно, перспективное планирование напрямую зависит от модели развития.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 pt-0 mt-0 pt-lg-5 mt-lg-5">
+            <div class="d-flex align-items-start align-items-lg-center justify-content-center justify-content-lg-end h-100 pt-0 pt-lg-5 mt-0 mt-lg-0">
+              <div class="d-flex flex-column p-4 rounded" style="background: rgba(28, 28, 28, 0.8);">
+                <p class="h3 text-center fw-bold pb-4 pt-3 text-white m-0">Обратная связь</p>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Ваше имя">
+                  <label for="floatingInput">Ваше имя</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingPassword" placeholder="Номер телефона">
+                  <label for="floatingPassword">Номер телефона</label>
+                </div>
+                <div class="px-4">
+                  <p class="m-0 py-4 small text-muted text-center">Ваши данные под защитой и не будут переданы третьим лицам</p>
+                </div>
+                <a href="#" class="btn btn-primary py-3 px-4 mb-4">
+                  <p class="m-0 px-3">Оставить заявку</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-5">
+            <a href="#360" class="text-decoration-none">
+              <div class="d-flex flex-column h-100 justify-content-center position-relative">
+                <div class="fw-bold mt-5 pt-4 text-center text-white">
+                  <span>Вперед!</span>
+                </div>
+                <div class="scroll-downs">
+                  <div class="mousey">
+                    <div class="scroller"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="360" id="360" style="background-image: url('./img/block-1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="container col-10 col-lg-12 h-100 py-5">
+        <div class="d-flex justify-content-center py-5 mt-3">
+          <div class="col-12 col-sm-10 col-lg-8 text-center text-white">
+            <p class="display-5 fw-bold mb-4">#<span class="text-primary">VALIM</span> Релокация 360°</p>
+            <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center gy-4">
+          <div class="col">
+            <div class="d-flex flex-column justify-content-around p-4 text-white rounded shadow-lg h-100" style="background: url('./img/360-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;border-radius:.325rem;">
+              <p class="mb-4 h3">Гражданство, ВНЖ и резидентсво </p>
+              <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column justify-content-around p-4 text-white rounded shadow-lg h-100" style="background: url('./img/360-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;border-radius:.325rem;">
+              <p class="mb-4 h3">Визы/шенген</p>
+              <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column justify-content-around p-4 text-white rounded shadow-lg h-100" style="background: url('./img/360-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;border-radius:.325rem;">
+              <p class="mb-4 h3">Недвижимость</p>
+              <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column justify-content-around p-4 text-white rounded shadow-lg h-100" style="background: url('./img/360-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;border-radius:.325rem;">
+              <p class="mb-4 h3">Получение банковских карт </p>
+              <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column justify-content-around p-4 text-white rounded shadow-lg h-100" style="background: url('./img/360-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;border-radius:.325rem;">
+              <p class="mb-4 h3">Открытие компаний и счетов зарубежом </p>
+              <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center my-5 pb-0 pb-lg-5">
+          <a href="#" class="btn btn-primary py-2 px-4">
+            <p class="m-0 px-3">Подробнее</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block-3" style="background: #151515;">
+      <div class="container col-10 col-lg-12">
+        <div class="shadow-lg rounded px-lg-5 px-4 pt-5 pb-4" style="background: url('./img/block-2.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
+            <div class="col-12 col-lg-7 text-center text-lg-start text-white">
+              <p class="display-5 fw-bold mb-4">Собственная колегия адвокатов</p>
+              <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне., часто используемый в печати и вэб-дизайне.Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="d-flex justify-content-lg-end justify-content-center pt-4 ps-0 ps-lg-4 pt-lg-0">
+                <img src="./img/block-2-1.png" class="img-fluid rounded shadow-lg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="text-white pt-5 mt-4">
+            <p class="h3 fw-bold mb-4 text-center text-lg-start">Лицензии и аккредитации</p>
+            <div class="d-flex align-items-center">
+              <div class="swiper-button-prev-1 me-3"></div>
+              <div class="swiper utp-slider p-0 p-sm-3 mx-3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="d-flex justify-content-center p-4 shadow rounded bg-dark">
+                      <img src="./img/customer-engagement.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex justify-content-center p-4 shadow rounded bg-dark">
+                      <img src="./img/customer-engagement.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex justify-content-center p-4 shadow rounded bg-dark">
+                      <img src="./img/customer-engagement.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex justify-content-center p-4 shadow rounded bg-dark">
+                      <img src="./img/customer-engagement.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex justify-content-center p-4 shadow rounded bg-dark">
+                      <img src="./img/customer-engagement.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex justify-content-center p-4 shadow rounded bg-dark">
+                      <img src="./img/customer-engagement.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next-2 ms-3"></div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-center pt-3 pb-2">
+              <a href="#" class="btn btn-primary py-2 px-4">
+                <p class="m-0 px-3">Подробнее</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block-4 py-5" style="background: #151515;">
+      <div class="container col-10 col-lg-12 py-5 my-5">
+        <div class="d-flex justify-content-center flex-column align-items-center text-white">
+          <p class="display-5 fw-bold mb-4">Наши преимущества</p>
+          <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 pt-5 gy-4 text-white">
+          <div class="col">
+            <div class="d-flex flex-column align-items-between justify-content-around px-xl-5 px-4 py-4 rounded shadow-lg h-100" style="background: url('./img/advantage-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <img src="./img/adv1.svg" height="75" alt="">
+              <p class="m-0 pt-5 text-white text-center">Быстрые сроки оказания услуг</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column align-items-between justify-content-around px-xl-5 px-4 py-4 rounded shadow-lg h-100" style="background: url('./img/advantage-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <img src="./img/adv2.svg" height="75" alt="">
+              <p class="m-0 pt-5 text-white text-center">Гарантия качества предоставляемых услуг</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column align-items-between justify-content-around px-xl-5 px-4 py-4 rounded shadow-lg h-100" style="background: url('./img/advantage-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <img src="./img/adv3.svg" height="75" alt="">
+              <p class="m-0 pt-5 text-white text-center">Полная помощь клиенту во время работы</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column align-items-between justify-content-around px-xl-5 px-4 py-4 rounded shadow-lg h-100" style="background: url('./img/advantage-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <img src="./img/adv4.svg" height="75" alt="">
+              <p class="m-0 pt-5 text-white text-center">Законно на каждом этапе</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="block-5" style="background: #151515">
+      <div class="container col-10 col-lg-12 pb-5">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center text-white">
+          <p class="display-5 fw-bold mb-0">Услуги</p>
+          <a href="#" class="btn btn-primary py-2 px-4 mt-4 mt-sm-0">
+            <p class="m-0 px-3">Все услуги</p>
+          </a>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 py-5  gy-4 text-white">
+            <div class="col rounded">
+              <a href="#" class="d-flex h-100 text-decoration-none">
+                <div class="d-flex flex-column align-items-between justify-content-around rounded shadow-lg uslugi-link">
+                  <img src="./img/montenegro_01.png" class="img-fluid rounded-top" alt="">
+                  <div class="d-flex h-100 align-items-center uslugi-bg" style="background-image: url('./img/galery2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="h4 p-4 rounded-bottom m-0 text-white"><span class="py-2">Гражданство, ВНЖ и резидентсво</span> </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col rounded">
+              <a href="#" class="d-flex h-100 text-decoration-none">
+                <div class="d-flex flex-column align-items-between justify-content-around rounded shadow-lg uslugi-link">
+                  <img src="./img/montenegro_02.png" class="img-fluid rounded-top" alt="">
+                  <div class="d-flex h-100 align-items-center uslugi-bg" style="background-image: url('./img/galery2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="h4 p-4 rounded-bottom m-0 text-white">Получение банковских карт $€ без личного присутствия</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col rounded">
+              <a href="#" class="d-flex h-100 text-decoration-none">
+                <div class="d-flex flex-column align-items-between justify-content-around rounded shadow-lg uslugi-link">
+                  <div class="">
+                    <img src="./img/montenegro_03.png" class="img-fluid rounded-top" alt="">
+                  </div>
+                  <div class="d-flex align-items-center h-100 uslugi-bg" style="background-image: url('./img/galery2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="h4 p-4 rounded-bottom m-0 text-white">Визы/шенген </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col rounded">
+              <a href="#" class="d-flex h-100 text-decoration-none">
+                <div class="d-flex flex-column align-items-between justify-content-around rounded shadow-lg uslugi-link">
+                  <img src="./img/montenegro_04.png" class="img-fluid rounded-top" alt="">
+                  <div class="d-flex h-100 align-items-center uslugi-bg" style="background-image: url('./img/galery2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="h4 p-4 rounded-bottom m-0 text-white">Открытие компаний и счетов зарубежом </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col rounded">
+              <a href="#" class="d-flex h-100 w-100 text-decoration-none">
+                <div class="d-flex flex-column align-items-between justify-content-around rounded shadow-lg uslugi-link">
+                  <img src="./img/montenegro_05.png" class="img-fluid rounded-top" alt="">
+                  <div class="d-flex h-100 align-items-center uslugi-bg" style="background-image: url('./img/galery2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="h4 p-4 rounded-bottom m-0 text-white">Недвижимость</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col rounded">
+              <a href="#" class="d-flex h-100 text-decoration-none">
+                <div class="d-flex flex-column align-items-between justify-content-around rounded shadow-lg uslugi-link">
+                  <img src="./img/montenegro_06.png" class="img-fluid rounded-top" alt="">
+                  <div class="d-flex h-100 align-items-center uslugi-bg" style="background-image: url('./img/galery2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="h4 p-4 rounded-bottom m-0 text-white">Консьерж-сервис</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="block-6" style="background:url('./img/block-6.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="container col-10 col-lg-12 py-5">
+        <div class="d-flex justify-content-center flex-column align-items-center text-white">
+          <p class="display-5 fw-bold mb-4">Схема сотрудничества</p>
+          <p class="m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+        </div>
+        <div class="row justify-content-between py-5">
+          <div class="col-2 col-lg-1">
+            <img src="./img/locat1.svg" class="d-none d-sm-block m-0" alt="">
+            <img src="./img/locat1.svg" height="60" class="d-block d-sm-none" alt="">
+          </div>
+          <div class="col-8 col-lg-10 d-flex justify-content-center align-self-center">
+            <img src="./img/Line 8.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-2 col-lg-1 d-flex justify-content-end">
+            <img src="./img/locat2.svg" class="d-none d-sm-block m-0" alt="">
+            <img src="./img/locat2.svg" height="60"class="d-block d-sm-none" alt="">
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-4 pb-5 text-white">
+          <div class="col">
+            <div class="d-flex flex-column px-5 py-4 rounded shadow-lg h-100" style="background: url('./img/sheme1.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <p class="h5 fw-bold mb-3 text-white">Обратитесь к нам</p>
+              <p class="text-white m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column px-5 py-4 rounded shadow-lg h-100" style="background: url('./img/sheme2.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <p class="h5 fw-bold mb-3 text-white">Составьте заявку</p>
+              <p class="text-white m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column px-5 py-4 rounded shadow-lg h-100" style="background: url('./img/sheme3.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <p class="h5 fw-bold mb-3 text-white">Оплатите</p>
+              <p class="text-white m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column px-5 py-4 rounded shadow-lg h-100" style="background: url('./img/sheme4.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <p class="h5 fw-bold mb-3 text-white">Получите услугу</p>
+              <p class="text-white m-0">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="block-7" style="background:#151515">
+      <div class="container col-10 col-lg-12 py-5">
+        <div class="container">
+          <p class="display-5 fw-bold mb-5 text-white">Оформление ВНЖ или гражданства</p>
+          <div class="row row-cols-1 row-cols-md-2 gy-4 fw-bold">
+            <div class="col">
+              <a href="#" class="d-flex h-100 text-decoration-none hover link-light">
+                <div class="d-flex position-relative w-100 hover-child rounded">
+                  <img src="./img/vnz1.png" class="rounded img-fluid w-100" alt="">
+                  <p class="position-absolute bottom-0 start-0 px-4 py-3 h4 fw-bold rounded m-0 w-100 text-white" style="background-color: rgba(182, 6, 35,0.6)">Черногория</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="d-flex h-100 text-decoration-none hover link-light">
+                <div class="d-flex position-relative w-100 hover-child rounded">
+                  <img src="./img/vnz2.png" class="rounded img-fluid w-100" alt="">
+                  <p class="position-absolute bottom-0 start-0 px-4 py-3 h4 fw-bold rounded m-0 w-100 text-white" style="background-color: rgba(182, 6, 35,0.6)">Греция</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="d-flex h-100 text-decoration-none hover link-light">
+                <div class="d-flex position-relative w-100 hover-child rounded">
+                  <img src="./img/vnz3.png" class="rounded img-fluid w-100" alt="">
+                  <p class="position-absolute bottom-0 start-0 px-4 py-3 h4 fw-bold rounded m-0 w-100 text-white" style="background-color: rgba(182, 6, 35,0.6)">ОАЭ</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="d-flex h-100 text-decoration-none hover link-light">
+                <div class="d-flex position-relative w-100 hover-child rounded">
+                  <img src="./img/vnz4.png" class="rounded img-fluid w-100" alt="">
+                  <p class="position-absolute bottom-0 start-0 px-4 py-3 h4 fw-bold rounded m-0 w-100 text-white" style="background-color: rgba(182, 6, 35,0.6)">Гренада</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="d-flex h-100 text-decoration-none hover link-light">
+                <div class="d-flex position-relative w-100 hover-child rounded">
+                  <img src="./img/vnz5.png" class="rounded img-fluid w-100" alt="">
+                  <p class="position-absolute bottom-0 start-0 px-4 py-3 h4 fw-bold rounded m-0 w-100 text-white" style="background-color: rgba(182, 6, 35,0.6)">Испания</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="d-flex h-100 text-decoration-none hover link-light">
+                <div class="d-flex position-relative w-100 hover-child rounded">
+                  <img src="./img/vnz6.png" class="rounded img-fluid w-100" alt="">
+                  <p class="position-absolute bottom-0 start-0 px-4 py-3 h4 fw-bold rounded m-0 w-100 text-white" style="background-color: rgba(182, 6, 35,0.6)">Германия</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-center pt-4 pb-3">
+            <a href="#" class="btn btn-primary py-2 px-4">
+              <p class="m-0 px-3">Смотреть все страны</p>
+            </a>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="block-8" style="background:url('./img/block-6.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="container col-10 col-lg-12 py-5">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center text-white">
+          <p class="display-5 fw-bold mb-0">Отзывы</p>
+          <a href="#" class="btn btn-primary py-2 px-4 mt-4 mt-sm-0">
+            <p class="m-0 px-3">Смотреть все</p>
+          </a>
+        </div>
+        <div class="d-flex align-items-center py-5">
+          <div class="swiper-button-prev-1 me-3 d-none d-sm-block"></div>
+          <div class="swiper review-slider p-0 p-sm-3 mx-0 mx-sm-3 position-relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded" style="background: #1C1C1C;">
+                  <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center">
+                    <img src="./img/review.png" class="rounded-circle me-0 me-sm-4" height="100" alt="">
+                    <div class="text-white text-center text-sm-start">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white">Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded" style="background: #1C1C1C;">
+                  <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center">
+                    <img src="./img/review.png" class="rounded-circle me-0 me-sm-4" height="100" alt="">
+                    <div class="text-white text-center text-sm-start">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white">Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded" style="background: #1C1C1C;">
+                  <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center">
+                    <img src="./img/review.png" class="rounded-circle me-0 me-sm-4" height="100" alt="">
+                    <div class="text-white text-center text-sm-start">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white">Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded" style="background: #1C1C1C;">
+                  <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center">
+                    <img src="./img/review.png" class="rounded-circle me-0 me-sm-4" height="100" alt="">
+                    <div class="text-white text-center text-sm-start">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white">Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-button-next-2 ms-3 d-none d-sm-block"></div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="swiper-button-prev-1 me-3 d-block d-sm-none"></div>
+          <div class="swiper-pagination-cust px-3" style="width:fit-content!important;"></div>
+          <div class="swiper-button-next-2 ms-3 d-block d-sm-none"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="block-9" style="background: #151515;">
+      <div class="container col-10 col-lg-12 py-5">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center text-white">
+          <p class="display-5 fw-bold mb-0">Отзывы</p>
+          <a href="#" class="btn btn-primary py-2 px-4 mt-4 mt-sm-0">
+            <p class="m-0 px-3">Смотреть все</p>
+          </a>
+        </div>
+        <div class="d-flex align-items-center py-5">
+          <div class="swiper review2-slider p-0 p-sm-3 mx-0 mx-sm-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/review2.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white text-center">Но разбавленное изрядной долей эмпатии, рациональное мыНо разбавленное изрядной долей эмпатии, рациональное мыНо разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/review2.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white text-center">Но разбавленное изрядной долей эмпатии, рациональное мыНональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/review2.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white text-center">Н мыНо разбльное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/review2.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white text-center">Но разбавленное изрядной долей эмпатии, рациональное мыНо разбавленное изрядной долей эмпатии, рациональное мыНо разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/review2.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Ярослав Никитин</p>
+                      <p class="m-0 text-muted">“Вид на жительство Германии”</p>
+                    </div>
+                  </div>
+                  <p class="m-0 pt-4 text-white text-center">Но рао определяет каждого участника как способного принимать собственные решения касаемо направлений прогрессивного развития.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="swiper-button-prev me-3"></div>
+          <div class="swiper-pagination-cust-2 mb-4 px-3" style="width:fit-content!important;"></div>
+          <div class="swiper-button-next ms-3"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="block-10 shadow-lg" style="background: #1C1C1C">
+      <div class="container col-10 col-lg-12 py-5">
+        <p class="display-5 fw-bold mb-0 text-white text-center text-md-start">Обратная связь</p>
+        <p class="m-0 py-4 small text-white text-center text-md-start">Ваши данные под защитой и не будут переданы третьим лицам</p>
+        <div class="d-flex flex-column flex-md-row ">
+          <div class="col">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Ваше имя">
+              <label for="floatingInput">Ваше имя</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mx-0 mx-md-4 my-4 my-md-0">
+              <input type="text" class="form-control" id="floatingPassword" placeholder="Номер телефона">
+              <label for="floatingPassword">Номер телефона</label>
+            </div>
+          </div>
+          <div class="col">
+            <a href="#" class="btn btn-primary py-3 px-4 w-100 h-100">
+              <p class="m-0 px-3">Оставить заявку</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="block-11" style="background: #151515">
+      <div class="container col-10 col-lg-6 py-5">
+        <div class="d-flex align-items-center">
+          <div class="swiper offices-slider p-0 p-sm-3 mx-0 mx-sm-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/adress-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Санкт-Петербург: <br> Коллегия адвокатов «Петербургский Правовой Альянс»</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center my-4 text-white">
+                      <div class="d-flex">
+                        <img src="./img/geo.svg" alt="">
+                        <p class="fw-bold m-0 ms-3 text-center">г. Санкт-Петербург, ул. Чайковского, д. 12А</p>
+                      </div>
+                      <div class="d-flex my-3">
+                        <img src="./img/net.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">https://grouppa.ru</p>
+                      </div>
+                      <div class="d-flex">
+                        <img src="./img/telephone.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">+78124078077</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mt-4">
+                    <div class="swiper-button-prev-2 me-3"></div>
+                    <div class="swiper-pagination-cust-3 px-3" style="width:fit-content!important;"></div>
+                    <div class="swiper-button-next-3 ms-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/adress-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Санкт-Петербург: <br> Коллегия адвокатов «Петербургский Правовой Альянс»</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center my-4 text-white">
+                      <div class="d-flex">
+                        <img src="./img/geo.svg" alt="">
+                        <p class="fw-bold m-0 ms-3 text-center">г. Санкт-Петербург, ул. Чайковского, д. 12А</p>
+                      </div>
+                      <div class="d-flex my-3">
+                        <img src="./img/net.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">https://grouppa.ru</p>
+                      </div>
+                      <div class="d-flex">
+                        <img src="./img/telephone.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">+78124078077</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mt-4">
+                    <div class="swiper-button-prev-2 me-3"></div>
+                    <div class="swiper-pagination-cust-3 px-3" style="width:fit-content!important;"></div>
+                    <div class="swiper-button-next-3 ms-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/adress-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Санкт-Петербург: <br> Коллегия адвокатов «Петербургский Правовой Альянс»</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center my-4 text-white">
+                      <div class="d-flex">
+                        <img src="./img/geo.svg" alt="">
+                        <p class="fw-bold m-0 ms-3 text-center">г. Санкт-Петербург, ул. Чайковского, д. 12А</p>
+                      </div>
+                      <div class="d-flex my-3">
+                        <img src="./img/net.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">https://grouppa.ru</p>
+                      </div>
+                      <div class="d-flex">
+                        <img src="./img/telephone.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">+78124078077</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mt-4">
+                    <div class="swiper-button-prev-2 me-3"></div>
+                    <div class="swiper-pagination-cust-3 px-3" style="width:fit-content!important;"></div>
+                    <div class="swiper-button-next-3 ms-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-4 shadow rounded h-100" style="background: url('./img/adress-bg.png');  background-size: cover; background-position: center; background-repeat: no-repeat;">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                      <p class="h4 fw-bold">Санкт-Петербург: <br> Коллегия адвокатов «Петербургский Правовой Альянс»</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center my-4 text-white">
+                      <div class="d-flex">
+                        <img src="./img/geo.svg" alt="">
+                        <p class="fw-bold m-0 ms-3 text-center">г. Санкт-Петербург, ул. Чайковского, д. 12А</p>
+                      </div>
+                      <div class="d-flex my-3">
+                        <img src="./img/net.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">https://grouppa.ru</p>
+                      </div>
+                      <div class="d-flex">
+                        <img src="./img/telephone.svg" alt="">
+                        <p class="fw-bold m-0 ms-3">+78124078077</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mt-4">
+                    <div class="swiper-button-prev-2 me-3"></div>
+                    <div class="swiper-pagination-cust-3 px-3" style="width:fit-content!important;"></div>
+                    <div class="swiper-button-next-3 ms-3"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="block-11" style="background: #151515">
+      <div class="container col-10 col-lg-12 py-5">
+        <div class="row row-cols-lg-2 row-cols-1 gy-4 mt-5">
+          <div class="col">
+              <div class="d-flex flex-column">
+                <p class="display-5 fw-bold mb-4 text-white text-center text-md-start">Частые вопросы</p>
+                <div class="text-white rounded px-4 py-3 my-2" style="background: #1C1C1C;">
+                  <div class="d-flex justify-content-between header" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                    <p class="m-0 fw-bold">Часто задаваемый вопрос?</p>
+                    <img src="./img/Group 414.svg" class="xmark" alt="">
+                  </div>
+                  <div class="collapse" id="collapse1">
+                    <div class="mt-4">
+                      Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                    </div>
+                  </div>
+                </div>
+                <div class="text-white rounded px-4 py-3 my-2" style="background: #1C1C1C;">
+                  <div class="d-flex justify-content-between header" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                    <p class="m-0 fw-bold">Часто задаваемый вопрос?</p>
+                    <img src="./img/Group 414.svg" class="xmark" alt="">
+                  </div>
+                  <div class="collapse" id="collapse2">
+                    <div class="mt-4">
+                      Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                    </div>
+                  </div>
+                </div>
+                <div class="text-white rounded px-4 py-3 my-2" style="background: #1C1C1C;">
+                  <div class="d-flex justify-content-between header" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                    <p class="m-0 fw-bold">Часто задаваемый вопрос?</p>
+                    <img src="./img/Group 414.svg" class="xmark" alt="">
+                  </div>
+                  <div class="collapse" id="collapse3">
+                    <div class="mt-4">
+                      Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                    </div>
+                  </div>
+                </div>
+                <div class="text-white rounded px-4 py-3 my-2" style="background: #1C1C1C;">
+                  <div class="d-flex justify-content-between header" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                    <p class="m-0 fw-bold">Часто задаваемый вопрос?</p>
+                    <img src="./img/Group 414.svg" class="xmark" alt="">
+                  </div>
+                  <div class="collapse" id="collapse4">
+                    <div class="mt-4">
+                      Но разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mt-2">
+                  <a href="#" class="btn btn-primary py-3 px-4 w-100 h-100">
+                    <p class="m-0 px-3">Больше вопросов</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex align-items-center justify-content-center justify-content-lg-start h-100 w-100 ps-0 ps-lg-4 rounded shadow-lg" style="background: url('./img/image 1.png');background-size: cover; background-repeat: no-repeat;">
+                <div class="p-5">
+                  <p class="text-white h4">Не нашли вопрос? <br>
+Задайте его нам напрямую!</p>
+<a href="#" class="text-decoration-none btn btn-outline-light mt-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#feedback">Задать вопрос</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="menu-footer pb-4" style="background-color:#000000">
+      <div class="container">
+        <div class="row text-center text-sm-start pt-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <a class="navbar-brand" href="#">
+              <img src="./img/Group.svg" height="20" alt="">
+            </a>
+            <div class="mt-5">
+              <p class="mb-0 text-white">8 (800) 888 88 88</p>
+              <p class="small text-secondary">Пн-Пт 10:00-20:00</p>
+              <p class="mb-0 text-white">info@mail.com</p>
+              <p class="small text-secondary">По всем вопросам</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 footer-link">
+            <a href="#" class="d-block text-decoration-none text-white fw-bold mb-1">Мировые события</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Концерты</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Спорт</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Театр</a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-1 footer-link">
+            <a href="#" class="d-block text-decoration-none text-white fw-bold mb-1 mt-4 mt-md-0">Туризм</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Россия</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Мир</a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 footer-link">
+            <a href="#" class="d-block text-decoration-none text-white fw-bold mb-1 mt-4 mt-md-0">Аренда авто</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Виана</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Спринтер</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Майбах</a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 footer-link">
+            <a href="#" class="d-block text-decoration-none text-white fw-bold mb-1 mt-4 mt-md-0">Услуги по всему миру</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Места на рейсах частных самолетах</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Доставка цветов</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Шоппинг ассистент</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Индивидуальные гиды/экскурсии</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Вип зал/fast track</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Трансфер</a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 footer-link">
+            <a href="#" class="d-block text-decoration-none text-white fw-bold mb-1 mt-4 mt-md-0">Организация мероприятий</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Корпоративные события</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Семейные праздники</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Деловые мероприятия</a>
+            <a href="#" class="small d-block text-decoration-none text-white">Приглашение медиа личности</a>
+          </div>
+          <div class="col-12 col-md-12 col-lg-1 d-flex d-lg-block justify-content-evenly justify-content-sm-between">
+            <div class="d-flex justify-content-center mb-3 mt-4 mt-lg-0">
+              <a href="#" class="icons d-flex align-items-center color p-2 rounded-circle">
+                <i class="icons-tel"></i>
+              </a>
+            </div>
+            <div class="d-flex justify-content-center mb-3 mt-4 mt-lg-0">
+              <a href="#" class="icons d-flex align-items-center color p-2 rounded-circle">
+                <i class="icons-inst"></i>
+              </a>
+            </div>
+            <div class="d-flex justify-content-center mb-3 mt-4 mt-lg-0">
+              <a href="#" class="icons d-flex align-items-center color p-2 rounded-circle">
+                <i class="icons-mail"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/slider-init.js"></script>
+
+  </body>
+</html>
